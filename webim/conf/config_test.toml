@@ -1,0 +1,80 @@
+debug = true
+listen = ":8089"
+host = "http://localhost:8089"
+backend_host = "http://3.0.248.6:8090"
+api_token = "$@_top_secret_@$"
+allow_origins = ["*"]
+jwt_key = "$12secret34$"
+
+[agent_conf]
+max_online_count = 10
+activate_code_effective_duration = "30m"
+agent_token_expire = "24h"
+agent_connection_token_expire = "2m"
+agent_online_expire = "1m"
+
+[mysql_conf]
+Dsn = "root:@tcp(127.0.0.1:3306)/custmchat?charset=utf8mb4&parseTime=True&loc=Local"
+MaxConn = 100
+MaxIdle = 20
+ConnMaxLifeTime = "14400s"
+
+[ip_location_conf]
+ipdb_path = "db/ipiptest.ipdb"
+
+[redis_conf]
+addr = "localhost:6379"
+read_timeout = "2s"
+write_timeout = "2s"
+
+[centrifugo_conf]
+api = "http://localhost:9000/api"
+authkey = "bef6a4f4-8d50-42fa-9a3d-4e20d32db45e"
+timeout = "2s"
+ping_interval = "20s"
+retry_times = 3
+agent_message = "%s_message"
+visitor_message = "%s_%s"
+new_conv_channel = "%s_new_conv"
+online_agents = "%s_online_agents"
+visitor_queue = "%s_visitor_queue"
+conversation_instruction = "%s_conv_instruction"
+internal_msg = "%s_internal_messages"
+
+[elasticsearch_conf]
+endpoint = "http://localhost:9200"
+username = ""
+password = ""
+region = ""
+timeout = "500ms"
+
+[email_conf]
+api_user = "czy01_test_5tagRq"
+api_key = "hM3xLUov4yNQdw3f"
+endpoint = "http://api.sendcloud.net/apiv2/mail/send"
+from = "chat186@GQO3GPtwHREPtt5UsAwLTgMRoFmKV5lg.sendcloud.org"
+from_name = "chat186"
+subject = ""
+html_tmpl = ""
+
+[submail_conf]
+app_id = ""
+app_key = ""
+sign_type = "sha1"
+
+[aws_s3_conf]
+region = "ap-southeast-1"
+bucket_name = "chat-im"
+access_key_id = "AKIAJJMMYTVGHC4O67UQ"
+secret_access_key = "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"
+session_token = ""
+use_ssl = false
+
+
+[task_handler_conf]
+host = "http://localhost:8989"
+send_ent_message_endpoint = "/send_auto_message"
+send_no_resp_message_endpoint = "/send_no_resp_message"
+end_conversation_endpoint = "/end_conversation"
+offline_end_conversation_endpoint = "/offline_end_conversation"
+delete_job_endpoint = "/delete_task"

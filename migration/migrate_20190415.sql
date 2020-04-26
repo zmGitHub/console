@@ -1,0 +1,1 @@
+alter table leave_message add column `track_id` CHAR(20) NOT NULL after `ent_id`;

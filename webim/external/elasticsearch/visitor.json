@@ -1,0 +1,133 @@
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 2,
+    "analysis": {
+      "analyzer": {
+        "default": {
+          "type": "ik_smart"
+        }
+      }
+    }
+  },
+  "mappings" : {
+    "_doc" : {
+      "properties" : {
+        "id": {
+          "type": "keyword"
+        },
+        "enterprise_id": {
+          "type": "keyword"
+        },
+        "track_id": {
+          "type": "keyword"
+        },
+        "visit_id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword",
+          "fields": {
+            "_exact": {
+              "type": "keyword"
+            }
+          }
+        },
+        "age": {
+          "type": "integer"
+        },
+        "gender": {
+          "type": "keyword"
+        },
+        "qq": {
+          "type": "keyword"
+        },
+        "email": {
+          "type": "keyword"
+        },
+        "tel": {
+          "type": "keyword"
+        },
+        "weibo": {
+          "type": "keyword"
+        },
+        "weixin": {
+          "type": "keyword"
+        },
+        "address": {
+          "type": "keyword"
+        },
+        "comment": {
+          "type": "text"
+        },
+        "browser_family": {
+          "type": "keyword",
+          "fields": {
+            "_exact": {
+              "type": "keyword"
+            }
+          }
+        },
+        "os_family": {
+          "type": "keyword",
+          "fields": {
+            "_exact": {
+              "type": "keyword"
+            }
+          }
+        },
+        "country": {
+          "type": "keyword"
+        },
+        "province": {
+          "type": "keyword"
+        },
+        "city": {
+          "type": "keyword"
+        },
+        "created_on": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "updated_on": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "tag": {
+          "type": "keyword"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "source_domain": {
+              "type": "keyword"
+            },
+            "source_keyword": {
+              "type": "keyword"
+            },
+            "source_source": {
+              "type": "keyword"
+            },
+            "source_url": {
+              "type": "keyword"
+            }
+          }
+        },
+        "landing_page": {
+          "type": "object",
+          "properties": {
+            "landing_page_title": {
+              "type": "keyword"
+            },
+            "landing_page_url": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  },
+  "aliases": {
+    "user_data_alias": {}
+  }
+}

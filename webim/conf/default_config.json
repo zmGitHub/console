@@ -1,0 +1,575 @@
+{
+  "agents_permissions_config": {
+    "agents_permissions_level": 1
+  },
+  "auto_reply_msg_settings": {
+    "web": {
+      "content": "您好，工作人员正在忙，请稍等。",
+      "countdown": 20,
+      "status": "close"
+    },
+    "baidu_bcp": {
+      "content": "您好，工作人员正在忙，请稍等。",
+      "countdown": 20,
+      "status": "close"
+    },
+    "mini_program": {
+      "content": "客服无应答",
+      "countdown": 20,
+      "status": "close"
+    },
+    "sdk": {
+      "content": "抱歉让您久等",
+      "countdown": 29,
+      "status": "close"
+    },
+    "toutiao": {
+      "content": "",
+      "countdown": 0,
+      "status": "close"
+    },
+    "weibo": {
+      "content": "抱歉让您久等了",
+      "countdown": 20,
+      "status": "close"
+    },
+    "weixin": {
+      "content": "抱歉让您久等了",
+      "countdown": 30,
+      "status": "close"
+    }
+  },
+  "chat_link_auto_msg_config": {
+    "web": {
+      "status": "open"
+    }
+  },
+  "client_waking_auto_msg": {
+    "web": {
+      "content": "顾客有事 等会",
+      "countdown": 20,
+      "status": "close"
+    },
+    "baidu_bcp": {
+      "content": "我还在等待你的消息哟~请问还有什么可以帮到您的吗？",
+      "countdown": 30,
+      "status": "close"
+    },
+    "mini_program": {
+      "content": "访客无应答",
+      "countdown": 20,
+      "status": "close"
+    },
+    "sdk": {
+      "content": "我还在等待你的消息哟~请问还有什么可以帮到您的吗？",
+      "countdown": 30,
+      "status": "close"
+    },
+    "toutiao": {
+      "content": "",
+      "countdown": 0,
+      "status": "close"
+    },
+    "weibo": {
+      "content": "我还在等待你的消息哟~请问还有什么可以帮到您的吗？",
+      "countdown": 20,
+      "status": "close"
+    },
+    "weixin": {
+      "content": "我还在等待你的消息哟~请问还有什么可以帮到您的吗？",
+      "countdown": 30,
+      "status": "close"
+    }
+  },
+  "conv_grade_config": {
+    "enable": false,
+    "first_level": {
+      "agent_msg_cnt": 2,
+      "client_msg_cnt": 10
+    },
+    "second_level": {
+      "agent_msg_cnt": 0,
+      "client_msg_cnt": 10
+    },
+    "third_level": {
+      "agent_msg_cnt": 0,
+      "client_msg_cnt": 5
+    }
+  },
+  "end_conv_expire_config": {
+    "mini_program": 3,
+    "sdk": 3,
+    "web": {
+      "no_msg_end": 5,
+      "offline_end": 30
+    },
+    "weibo": 3,
+    "weixin": 3
+  },
+  "ending_msg_settings": {
+    "web": {
+      "agent_ending_message": "感谢您的咨询，祝您生活工作顺利! ",
+      "auto_ending_message": "感谢您的咨询，祝您生活工作顺利！",
+      "status": "close"
+    },
+    "baidu_bcp": {
+      "agent_ending_message": "【系统消息】您好，为了保证服务质量，我们已经结束了对话，期待再次为您服务。",
+      "auto_ending_message": "【系统消息】您好，由于很久没有收到您的消息，系统自动结束了对话。如果还有需要，欢迎随时联系我们。",
+      "status": "close"
+    },
+    "mini_program": {
+      "status": "close"
+    },
+    "sdk": {
+      "agent_ending_message": "到此为止，再咨询收费了。（手动结束）",
+      "auto_ending_message": "您好，由于很久没有收到您的消息，系统自动结束了对话。\n如果仍有需要，欢迎随时联系我们。",
+      "status": "close"
+    },
+    "toutiao": {
+      "agent_ending_message": "结束",
+      "status": "close"
+    },
+    "weibo": {
+      "agent_ending_message": "如有问题，欢迎咨询（微博手动结束）",
+      "auto_ending_message": "您好，由于很久没有收到您的消息，系统自动结束了对话。\n如果仍有需要，欢迎随时联系我们。（微博自动结束）",
+      "status": "close"
+    },
+    "weixin": {
+      "agent_ending_message": "如有问题，欢迎咨询（微信手动结束）",
+      "auto_ending_message": "您好，由于很久没有收到您的消息，系统自动结束了对话。\n如果仍有需要，欢迎随时联系我们。（微信自动结束）",
+      "status": "close"
+    },
+    "prompt_status": "close"
+  },
+  "invitation_config": {
+    "auto": {
+      "accept": {
+        "countdown": 10,
+        "status": "open"
+      },
+      "countdown": 10,
+      "reject": {
+        "countdown": 10,
+        "type": "again"
+      },
+      "status": "close"
+    },
+    "desktop": {
+      "actions": [
+        {
+          "height": 48,
+          "id": "592qxtz42",
+          "position": {
+            "bottom": "auto",
+            "left": 46,
+            "right": "auto",
+            "top": 26
+          },
+          "type": 1,
+          "width": 122
+        },
+        {
+          "height": 30,
+          "id": "5b4zpxp7a",
+          "position": {
+            "bottom": "auto",
+            "left": 174,
+            "right": "auto",
+            "top": 1
+          },
+          "type": 2,
+          "width": 25
+        },
+        {
+          "height": 18,
+          "id": "5b4zpyo2u",
+          "position": {
+            "bottom": "auto",
+            "left": 0,
+            "right": "auto",
+            "top": 0
+          },
+          "type": 3,
+          "width": 103,
+          "linkType": 1
+        }
+      ],
+      "bgi": {
+        "height": 100,
+        "src": "",
+        "width": 200
+      },
+      "position": {
+        "bottom": 1,
+        "side": 0,
+        "type": 1
+      },
+      "src": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/7c69d3069c4db8ab872b99e5b374cd15.png",
+      "text": "    \n终于等到你",
+      "type": 2
+    },
+    "facade_status": "open",
+    "manual": {
+      "accept": {
+        "countdown": 4,
+        "status": "close"
+      },
+      "reject": {
+        "countdown": 10,
+        "type": "stop"
+      },
+      "status": "close"
+    },
+    "mobile": {
+      "actions": [
+        {
+          "height": 37,
+          "id": "5954xq4vs",
+          "position": {
+            "bottom": "auto",
+            "left": 216,
+            "right": "auto",
+            "top": 2
+          },
+          "type": 2,
+          "width": 39
+        }
+      ],
+      "bgi": {
+        "height": 140,
+        "src": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/e6a03078a326241a7a6376aa3a72d9c8.png",
+        "width": 280
+      },
+      "position": {
+        "type": 2,
+        "value": 42
+      },
+      "src": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/845a6a9da8a170132f627573be40e2e6.png",
+      "text": "您好，当前有专业客服人员在线，让我们来帮助您吧。",
+      "type": 2
+    }
+  },
+  "oauth_settings": {
+    "identity_key": "",
+    "retry_times": 0,
+    "secret_key": "",
+    "status": "close",
+    "success_result": "",
+    "url": ""
+  },
+  "promotion_msg_settings": {
+    "web": {
+      "content": [
+        "test msg",
+        "test msg"
+      ],
+      "status": "open",
+      "stop_after_talk": false
+    },
+    "baidu_bcp": {
+      "content": [
+        "test msg"
+      ],
+      "status": "open",
+      "stop_after_talk": false
+    },
+    "mini_program": {
+      "content": [
+        "test msg",
+        "test msg"
+      ],
+      "status": "close",
+      "stop_after_talk": false
+    },
+    "sdk": {
+      "content": [
+        "test msg"
+      ],
+      "status": "close",
+      "stop_after_talk": false
+    },
+    "toutiao": {
+      "content": [
+        "test msg"
+      ],
+      "status": "close",
+      "stop_after_talk": false
+    },
+    "weibo": {
+      "content": [
+        "test msg"
+      ],
+      "status": "close",
+      "stop_after_talk": false
+    },
+    "weixin": {
+      "content": [
+        "test msg"
+      ],
+      "status": "close",
+      "stop_after_talk": false
+    }
+  },
+  "queueing_settings": {
+    "intro": "亲爱的顾客，非常抱歉，当前所有客服已达服务上限，请耐心等候，我们很快来为你服务，谢谢理解!",
+    "queue_size": 2,
+    "status": "close"
+  },
+  "reserve_clues_config": {
+    "enabled": true,
+    "fallback": "allocate_rule"
+  },
+  "robot_settings": {
+    "auto_complete_only_query_main_q": true,
+    "avatar": "https://s3.cn-north-1.amazonaws.com.cn/pics.meiqia.bucket/86d1d383c0f6cf72",
+    "correlation_threshold": 4,
+    "failed_threshold": 3,
+    "left_msg_cnt": 45175,
+    "manual_redirect": false,
+    "more_like_this_count": 3,
+    "nickname": "爱因机器人",
+    "provider": "meiqia",
+    "response_cant_answer": [
+      {
+        "text": "抱歉，能否再描述一下您的问题，没太听懂呢~"
+      },
+      {
+        "text": "抱歉请您换一种方式提问哦，方便小洽正确识别"
+      }
+    ],
+    "response_eval_useful": [
+      {
+        "text": "可以"
+      }
+    ],
+    "response_eval_useless": [
+      {
+        "text": "不可以"
+      }
+    ],
+    "response_manual_redirect": [
+      {
+        "text": "不太懂你说什么，手动转人工"
+      }
+    ],
+    "response_more_like_this": [
+      {
+        "text": ""
+      }
+    ],
+    "response_queueing": [
+      {
+        "text": "不太听懂你说什么，人工客服正忙，请排队稍后"
+      }
+    ],
+    "response_redirect": [
+      {
+        "text": "不太懂你说什么，正在为您转接人工，请稍后~"
+      }
+    ],
+    "response_reply": [
+      {
+        "text": "不太懂你说什么，要不给我们留言？"
+      }
+    ],
+    "rule": "robot_first",
+    "show_switch": true,
+    "signature": "",
+    "status": "close",
+    "unmatch_threshold": 3,
+    "welcome_question_ids": [
+      705987,
+      698801,
+      684911,
+      682159
+    ],
+    "welcome_text": "<div>欢迎，我是机器人小助手，请问遇到了什么问题吗？</div><div data-role=\"blank-line\"><br/></div>"
+  },
+  "sales_cloud_config": null,
+  "send_file_settings": {
+    "widget_status": "open"
+  },
+  "service_evaluation_config": {
+    "agent_invitation": "close",
+    "agent_visible": "close",
+    "auto_invitation": "close",
+    "prompt_text": "请您为我的服务做出评价"
+  },
+  "standalone_window_config": {
+    "background": {
+      "color": "c4cf48",
+      "url": ""
+    },
+    "desktop": {
+      "customer_content": "<div>778</div><div><img src=https://s3-qcloud.meiqia.com/pics.meiqia.bucket/6ab41102558be9a21dd500dd6ce39a00.png style=\"max-width: 100%;\"></div><div><br></div><div><img src=https://s3-qcloud.meiqia.com/pics.meiqia.bucket/709e561b79d497069df012e12e44ffd7.jpg style=\"max-width: 100%;\"></div><div><br></div><div><br></div>",
+      "customer_photo_type": "small",
+      "theme": [
+        "8686a5",
+        "white",
+        "3ad531"
+      ],
+      "type": "fusion"
+    },
+    "mobile": {
+      "theme": [
+        "573942",
+        "white"
+      ],
+      "type": "mustang"
+    },
+    "removeBrand": "open",
+    "ring": "open"
+  },
+  "survey": {
+    "has_submitted_form": false,
+    "status": "close"
+  },
+  "ticket_config": {
+    "captcha": "close",
+    "category": "close",
+    "contactRule": "single",
+    "defaultTemplate": "close",
+    "defaultTemplateContent": "姓名：\n上手随时：",
+    "email": "close",
+    "intro": "您好，现在为下班时间，请您留下个人信息，我们会在第一时间跟您取得联系。1111111111111111111111111111111111111111111111111",
+    "name": "close",
+    "permission": "close",
+    "qq": "close",
+    "tel": "close",
+    "wechat": "close"
+  },
+  "timeout_redirect_config": {
+    "countdown": 20,
+    "rules": [
+      {
+        "countdown": 20,
+        "type": "group_first"
+      }
+    ],
+    "status": "close"
+  },
+  "visitor_visible": {
+    "region": "open"
+  },
+  "web_callback_settings": {
+    "callback_switch": "open",
+    "captcha_switch": "open"
+  },
+  "welcome_msg_settings": {
+    "web": {
+      "content": "你好",
+      "status": "open"
+    },
+    "baidu_bcp": {
+      "content": "手机百度企业欢迎语",
+      "status": "open"
+    },
+    "mini_program": {
+      "content": "小程序欢迎语",
+      "status": "open"
+    },
+    "sdk": {
+      "content": "SDK企业欢迎消息",
+      "status": "open"
+    },
+    "toutiao": {
+      "content": "",
+      "status": "open"
+    },
+    "weibo": {
+      "content": "你好，请问有什么可以帮到您的吗",
+      "status": "open"
+    },
+    "weixin": {
+      "content": "你好，欢迎咨询",
+      "status": "open"
+    }
+  },
+  "widget_settings": {
+    "desktop": {
+      "btn": {
+        "icon": {
+          "offline": 7,
+          "online": 7
+        },
+        "picture": {
+          "offline": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/c0b13c59184b1578c3d7cc137a2a8cf9.jpg",
+          "online": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/5cd3263b32d1e22878db4af8a57c128c.jpg"
+        },
+        "position": {
+          "bottom": "7",
+          "horizontal": "0",
+          "type": "right"
+        },
+        "preview": "open",
+        "text": {
+          "offline": "中文和英文标点符号",
+          "online": "来聊聊吧！"
+        },
+        "theme": "007aff",
+        "type": "aside"
+      },
+      "panel": {
+        "customer_content": "<div><img src=https://s3-qcloud.meiqia.com/pics.meiqia.bucket/8c41379de783028472e60d057303d501.png style=\"max-width: 100%;\"></div><div> </div><ul><li>入驻咨询热线：400-9925-909</ul><div><br></div><ul><li>联系邮箱：dream@mydreamplus.com</ul><div><br></div><ul><li>北京市朝阳区朝外MEN写字楼B座3层</ul><div><br></div><ul><li>010-65529952（公司总机）</ul>",
+        "customer_photo_type": "small",
+        "position": {
+          "bottom": "32",
+          "horizontal": "14",
+          "type": "right"
+        },
+        "theme": [
+          "a09da5",
+          "white",
+          "5bcaff"
+        ],
+        "type": "edge"
+      },
+      "pop": false
+    },
+    "https": "close",
+    "mobile": {
+      "btn": {
+        "icon": {
+          "offline": 1,
+          "online": 2
+        },
+        "picture": {
+          "offline": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/c4509a27e8e71fc30ef14f4c8abc5213.jpg",
+          "online": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/avatars/20180116/67a6a2aebd0059ba6f41c7c0bc5f55e6.png"
+        },
+        "position": {
+          "bottom": "43",
+          "horizontal": "13",
+          "type": "right"
+        },
+        "preview": "open",
+        "text": {
+          "offline": "下班了，给我们留言吧",
+          "online": "英文标点符号"
+        },
+        "theme": "007aff",
+        "type": "round"
+      },
+      "panel": {
+        "position": {
+          "bottom": 0,
+          "horizontal": 0,
+          "type": ""
+        },
+        "theme": [
+          "6e7c79",
+          "white"
+        ],
+        "type": "kuga"
+      },
+      "pop": false
+    },
+    "removeBrand": "open",
+    "ring": "open",
+    "ticketOnly": "close"
+  },
+  "is_activated": false,
+  "is_from_baidu_open": false,
+  "is_group": false,
+  "scheduler_after_client_send_msg": false
+}

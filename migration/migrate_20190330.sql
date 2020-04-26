@@ -1,0 +1,1 @@
+alter table `quickreply_group` add column `position` INT NOT NULL DEFAULT 0 after `creator_type`;

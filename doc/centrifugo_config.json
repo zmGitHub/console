@@ -1,0 +1,19 @@
+{
+      "secret": "$12secret34$",
+      "admin": true,
+      "admin_password": "1w2e3r4t",
+      "admin_secret": "1w2e3r4tyy",
+      "engine": "redis",
+      "anonymous": true,
+      "publish": true,
+      "presence": true,
+      "join_leave": true,
+      "history_size": 100,
+      "history_lifetime": 300,
+      "history_recover": true,
+      "debug": true,
+      "internal_port": 9000,
+      "api_insecure": false,
+      "client_insecure": true,
+      "api_key":"bef6a4f4-8d50-42fa-9a3d-4e20d32db45e"
+}

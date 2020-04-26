@@ -1,0 +1,1 @@
+alter table `promotion_msgs` add index `idx_enterprise` (`enterprise_id`);

@@ -1,0 +1,185 @@
+{
+  "agent": {
+    "avatar": "https://s3.cn-north-1.amazonaws.com.cn/pics.meiqia.bucket/86d1d383c0f6cf72",
+    "cellphone": null,
+    "deleted_at": null,
+    "enterprise_id": 5869,
+    "id": 26856,
+    "is_online": true,
+    "nickname": "机器人",
+    "privilege": "bot",
+    "privilege_range": "all",
+    "public_cellphone": null,
+    "public_email": null,
+    "qq": null,
+    "read_feature_id": null,
+    "realname": "机器人",
+    "signature": "",
+    "status": "on_duty",
+    "telephone": null,
+    "token": "3dc39ba5d9cc35b472a2b83b9eda316a",
+    "weixin": null
+  },
+  "conv": {
+    "agent_effective_msg_num": 0,
+    "agent_id": 26856,
+    "agent_msg_num": 1,
+    "agent_type": "bot",
+    "assignee": 26856,
+    "client_first_send_time": null,
+    "client_msg_num": 0,
+    "clues": null,
+    "converse_duration": 0,
+    "created_on": "2019-01-28T14:00:47.798021",
+    "ended_by": null,
+    "ended_on": null,
+    "enterprise_id": 5869,
+    "first_msg_created_on": "2019-01-28T14:00:47.953403",
+    "first_response_wait_time": null,
+    "id": 459002051,
+    "last_msg_content": "欢迎，我是机器人小助手，请问遇到了什么问题吗？\n\n\n1. 你好，",
+    "last_msg_created_on": "2019-01-28T14:00:47.953403",
+    "last_updated": "2019-01-28T14:00:47.798032",
+    "msg_num": 1,
+    "quality_grade": null,
+    "title": "美洽PC测试页面2",
+    "track_id": "1GOk61Z3ncFmqCjwruSbfzHj57c",
+    "url": "https://demo.meiqia.com/pc/2.html",
+    "visit_id": "1GOk64tOOThMpq6z4mm7DGWpzw1"
+  },
+  "conv_new_create": true,
+  "ent": {
+    "allocation_rule": "roundrobin",
+    "avatar": "https://s3-qcloud.meiqia.com/pics.meiqia.bucket/avatars/20180209/73c6647092456d1632c91be8cd57e45d.jpg",
+    "city": "null",
+    "contact_email": "85196508438@qq.com",
+    "contact_name": "一二三四五六七八九八七六五四三二一",
+    "contact_telephone": "12345",
+    "created_on": "2016-01-13T04:07:55.493572",
+    "fullname": "1",
+    "id": 5869,
+    "industry": "互联网/软件",
+    "last_active_time": null,
+    "location": null,
+    "mailing_address": "高新区软件园e5区4楼",
+    "name": "美洽公司",
+    "province": "北京市",
+    "public_cellphone": "11381381388",
+    "public_email": "team@meiqia.com",
+    "public_nickname": "美洽客服团队",
+    "public_qq": "1234567",
+    "public_signature": "您想了解的美洽产品",
+    "public_telephone": "88888888",
+    "public_weixin": "7654321",
+    "returning_customer_enabled": false,
+    "selecting_rule_enabled": true,
+    "special_serving_limit": 0,
+    "superadmin_id": 32824,
+    "telephone": null,
+    "token": "fa417e72be909a80fa891c6f66cd6752",
+    "type": "platform",
+    "website": null
+  },
+  "messages": [
+    {
+      "action": "message",
+      "agent": {
+        "avatar": "https://s3.cn-north-1.amazonaws.com.cn/pics.meiqia.bucket/86d1d383c0f6cf72",
+        "cellphone": null,
+        "deleted_at": null,
+        "enterprise_id": 5869,
+        "id": 26856,
+        "nickname": "机器人",
+        "privilege": "bot",
+        "public_cellphone": null,
+        "public_email": null,
+        "qq": null,
+        "read_feature_id": null,
+        "realname": "机器人",
+        "signature": "",
+        "status": "on_duty",
+        "telephone": null,
+        "token": "3dc39ba5d9cc35b472a2b83b9eda316a",
+        "weixin": null
+      },
+      "agent_id": 26856,
+      "content": "欢迎，我是机器人小助手，请问遇到了什么问题吗？\n\n\n1. 你好，请问今晚吃什么\n2. 神雕侠女\n3. 123cesjjr\n4. 小猫试玩怎么玩",
+      "content_robot": [
+        {
+          "rich_text": "<div>欢迎，我是机器人小助手，请问遇到了什么问题吗？</div><div data-role=\"blank-line\"><br/></div>",
+          "text": "欢迎，我是机器人小助手，请问遇到了什么问题吗？",
+          "type": "text"
+        },
+        {
+          "items": [
+            {
+              "text": "1. 你好，请问今晚吃什么",
+              "value": 1
+            },
+            {
+              "text": "2. 神雕侠女",
+              "value": 2
+            },
+            {
+              "text": "3. 123cesjjr",
+              "value": 3
+            },
+            {
+              "text": "4. 小猫试玩怎么玩",
+              "value": 4
+            }
+          ],
+          "type": "menu"
+        }
+      ],
+      "content_type": "bot",
+      "conversation_id": 459002051,
+      "created_on": "2019-01-28T14:00:47.953403",
+      "enterprise_id": 5869,
+      "extra": {
+        "content": null,
+        "content_robot": [
+          {
+            "rich_text": "<div>欢迎，我是机器人小助手，请问遇到了什么问题吗？</div><div data-role=\"blank-line\"><br/></div>",
+            "text": "欢迎，我是机器人小助手，请问遇到了什么问题吗？",
+            "type": "text"
+          },
+          {
+            "items": [
+              {
+                "text": "1. 你好，请问今晚吃什么",
+                "value": 1
+              },
+              {
+                "text": "2. 神雕侠女",
+                "value": 2
+              },
+              {
+                "text": "3. 123cesjjr",
+                "value": 3
+              },
+              {
+                "text": "4. 小猫试玩怎么玩",
+                "value": 4
+              }
+            ],
+            "type": "menu"
+          }
+        ],
+        "sub_type": "menu",
+        "summary": "欢迎，我是机器人小助手，请问遇到了什么问题吗？\n\n\n1. 你好，请问今晚吃什么\n2. 神雕侠女\n3. 123cesjjr\n4. 小猫试玩怎么玩",
+        "thumbnail": null
+      },
+      "from_type": "bot",
+      "id": 2574524209,
+      "question_id": null,
+      "read_on": null,
+      "sub_type": "menu",
+      "track_id": "1GOk61Z3ncFmqCjwruSbfzHj57c",
+      "type": "message"
+    }
+  ],
+  "reserve_token": null,
+  "result": "new_conv",
+  "success": true
+}

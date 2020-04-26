@@ -1,0 +1,9 @@
+.idea/
+bin/
+.vscode/
+vendor/
+_project/
+
+.DS_Store
+
+webim/db/ipiptest.ipdb

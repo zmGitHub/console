@@ -1,0 +1,148 @@
+{
+  "settings": {
+    "routing": {
+      "allocation": {
+        "require": {
+          "box_type": "hot"
+        }
+      }
+    },
+    "number_of_shards": 9,
+    "number_of_replicas": 2,
+    "analysis": {
+      "analyzer": {
+        "default": {
+          "type": "ik_smart"
+        },
+        "es_std": {
+          "type": "standard"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "dynamic": false,
+      "properties": {
+        "enterprise_id": {
+          "type": "keyword"
+        },
+        "trace_id": {
+          "type": "keyword"
+        },
+        "visitor": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "keyword"
+            },
+            "telephone": {
+              "type": "keyword"
+            },
+            "tags": {
+              "type": "keyword"
+            },
+            "remark": {
+              "type": "text"
+            }
+          }
+        },
+        "ip": {
+          "type": "ip",
+          "index": "false"
+        },
+        "province": {
+          "type": "keyword",
+          "index": "false"
+        },
+        "city": {
+          "type": "keyword",
+          "index": "false"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "source_domain": {
+              "type": "keyword"
+            },
+            "source_keyword": {
+              "type": "keyword"
+            },
+            "source_source": {
+              "type": "keyword"
+            },
+            "source_url": {
+              "type": "keyword"
+            }
+          }
+        },
+        "landing_page": {
+          "type": "object",
+          "properties": {
+            "page_title": {
+              "type": "keyword"
+            },
+            "page_url": {
+              "type": "keyword"
+            }
+          }
+        },
+        "conversation_id": {
+          "type": "keyword"
+        },
+        "agent_id": {
+          "type": "keyword"
+        },
+        "created_at": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "ended_at": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "messages": {
+          "type": "nested",
+          "properties": {
+            "id": {
+              "type": "keyword"
+            },
+            "content": {
+              "type": "text"
+            }
+          }
+        },
+        "client_msg_count": {
+          "type": "integer"
+        },
+        "agent_msg_count": {
+          "type": "integer"
+        },
+        "first_resp_wait_seconds": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "keyword"
+        },
+        "title": {
+          "type": "keyword"
+        },
+        "quality_grade": {
+          "type": "keyword"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "evaluation_level": {
+          "type": "keyword"
+        },
+        "summary": {
+          "type": "text"
+        }
+      }
+    }
+  },
+  "aliases": {
+    "search-conversations": {}
+  }
+}

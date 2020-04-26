@@ -1,0 +1,11 @@
+alter table enterprise add column `full_name` VARCHAR(100) NOT NULL DEFAULT '' after `name`;
+alter table enterprise add column `province` VARCHAR(100) NOT NULL DEFAULT '' after `full_name`;
+alter table enterprise add column `city` VARCHAR(100) NOT NULL DEFAULT '' after `province`;
+alter table enterprise add column `location` VARCHAR(255) NOT NULL DEFAULT '' after `industry`;
+alter table enterprise add column `address` VARCHAR(255) NOT NULL DEFAULT '' after `location`;
+alter table enterprise add column `website` VARCHAR(255) NOT NULL DEFAULT '' after `address`;
+alter table enterprise add column `contact_mobile` VARCHAR(40) NOT NULL DEFAULT '' after `last_activated_at`;
+alter table enterprise add column `contact_email` VARCHAR(40) NOT NULL DEFAULT '';
+alter table enterprise add column `contact_qq` VARCHAR(40) NOT NULL DEFAULT '';
+alter table enterprise add column `contact_wechat` VARCHAR(40) NOT NULL DEFAULT '';
+alter table enterprise add column `contact_signature` VARCHAR(255) NOT NULL DEFAULT '';

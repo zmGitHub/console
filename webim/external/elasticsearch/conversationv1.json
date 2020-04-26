@@ -1,0 +1,336 @@
+{
+  "settings": {
+    "routing": {
+      "allocation": {
+        "require": {
+          "box_type": "hot"
+        }
+      }
+    },
+    "number_of_shards": 2,
+    "number_of_replicas": 2,
+    "analysis": {
+      "analyzer": {
+        "default": {
+          "type": "ik_smart"
+        },
+        "es_std": {
+          "type": "standard"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "dynamic": false,
+      "properties": {
+        "agent_effective_msg_num": {
+          "type": "integer"
+        },
+        "agent_id": {
+          "type": "keyword"
+        },
+        "agent_msg_num": {
+          "type": "integer"
+        },
+        "agent_type": {
+          "type": "keyword"
+        },
+        "assignee": {
+          "type": "keyword"
+        },
+        "client_first_send_time": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "client_last_send_time": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "client_msg_num": {
+          "type": "integer"
+        },
+        "clues": {
+          "type": "keyword"
+        },
+        "converse_duration": {
+          "type": "integer"
+        },
+        "created_on": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "ended_by": {
+          "type": "keyword"
+        },
+        "ended_on": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "enterprise_id": {
+          "type": "keyword"
+        },
+        "eva_content": {
+          "type": "keyword"
+        },
+        "eva_level": {
+          "type": "integer"
+        },
+        "first_msg_created_on": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "first_response_wait_time": {
+          "type": "integer"
+        },
+        "has_summary": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "keyword"
+        },
+        "is_client_online": {
+          "type": "boolean"
+        },
+        "last_msg_content": {
+          "type": "text"
+        },
+        "last_msg_created_on": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "last_updated": {
+          "type": "date",
+          "format": "dateOptionalTime"
+        },
+        "messages": {
+          "type": "nested",
+          "properties": {
+            "id": {
+              "type": "keyword"
+            },
+            "content": {
+              "type": "text"
+            }
+          }
+        },
+        "msg_num": {
+          "type": "integer"
+        },
+        "quality_grade": {
+          "type": "keyword"
+        },
+        "tags": {
+          "type": "keyword"
+        },
+        "title": {
+          "type": "keyword"
+        },
+        "track_id": {
+          "type": "keyword"
+        },
+        "url": {
+          "type": "keyword"
+        },
+        "visit_id": {
+          "type": "keyword"
+        },
+        "visitor": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "keyword"
+            },
+            "telephone": {
+              "type": "keyword"
+            },
+            "remark": {
+              "type": "text"
+            }
+          }
+        },
+        "visit_info": {
+          "type": "object",
+          "properties": {
+            "agent_token": {
+              "type": "keyword"
+            },
+            "app_name": {
+              "type": "keyword"
+            },
+            "app_version": {
+              "type": "keyword"
+            },
+            "appkey": {
+              "type": "keyword"
+            },
+            "avatar": {
+              "type": "keyword"
+            },
+            "browser_family": {
+              "type": "keyword"
+            },
+            "browser_version": {
+              "type": "keyword"
+            },
+            "browser_version_string": {
+              "type": "keyword"
+            },
+            "city": {
+              "type": "keyword"
+            },
+            "country": {
+              "type": "keyword"
+            },
+            "created_on": {
+              "type": "date",
+              "format": "dateOptionalTime"
+            },
+            "device_brand": {
+              "type": "keyword"
+            },
+            "device_family": {
+              "type": "keyword"
+            },
+            "device_model": {
+              "type": "keyword"
+            },
+            "device_token": {
+              "type": "keyword"
+            },
+            "enterprise_id": {
+              "type": "keyword"
+            },
+            "first_visit_page_domain_by_session": {
+              "type": "keyword"
+            },
+            "first_visit_page_source_by_session": {
+              "type": "keyword"
+            },
+            "first_visit_page_source_domain_by_session": {
+              "type": "keyword"
+            },
+            "first_visit_page_source_keyword_by_session": {
+              "type": "keyword"
+            },
+            "first_visit_page_source_url_by_session": {
+              "type": "keyword"
+            },
+            "first_visit_page_title_by_session": {
+              "type": "keyword"
+            },
+            "first_visit_page_url_by_session": {
+              "type": "keyword"
+            },
+            "id": {
+              "type": "keyword"
+            },
+            "ip": {
+              "type": "keyword"
+            },
+            "isp": {
+              "type": "keyword"
+            },
+            "last_title": {
+              "type": "keyword"
+            },
+            "last_url": {
+              "type": "keyword"
+            },
+            "last_visit_id": {
+              "type": "keyword"
+            },
+            "last_visit_page_title_by_session": {
+              "type": "keyword"
+            },
+            "last_visit_page_url_by_session": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            },
+            "net_type": {
+              "type": "keyword"
+            },
+            "os_category": {
+              "type": "keyword"
+            },
+            "os_family": {
+              "type": "keyword"
+            },
+            "os_language": {
+              "type": "keyword"
+            },
+            "os_timezone": {
+              "type": "keyword"
+            },
+            "os_version": {
+              "type": "keyword"
+            },
+            "os_version_string": {
+              "type": "keyword"
+            },
+            "platform": {
+              "type": "keyword"
+            },
+            "province": {
+              "type": "keyword"
+            },
+            "residence_time_sec": {
+              "type": "integer"
+            },
+            "residence_time_sec_by_session": {
+              "type": "integer"
+            },
+            "resolution": {
+              "type": "keyword"
+            },
+            "sdk_image_url": {
+              "type": "keyword"
+            },
+            "sdk_name": {
+              "type": "keyword"
+            },
+            "sdk_source": {
+              "type": "keyword"
+            },
+            "sdk_version": {
+              "type": "keyword"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "status_on": {
+              "type": "keyword"
+            },
+            "track_id": {
+              "type": "keyword"
+            },
+            "ua_string": {
+              "type": "keyword"
+            },
+            "visit_cnt": {
+              "type": "integer"
+            },
+            "visit_id": {
+              "type": "keyword"
+            },
+            "visit_page_cnt": {
+              "type": "integer"
+            },
+            "visit_page_cnt_by_session": {
+              "type": "integer"
+            },
+            "visited_on": {
+              "type": "date",
+              "format": "dateOptionalTime"
+            }
+          }
+        }
+      }
+    }
+  },
+  "aliases": {
+    "search-conversations": {}
+  }
+}
